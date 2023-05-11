@@ -6,72 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="./js/main.js"></script>
 </head>
 
 <body>
-    <div class="nav-bar">
+    <div class="header">
         <h1 class="title">Sai Kiran, Raparthi</h1>
     </div>
-    <div class="heading">
-        <span>Personal Projects</span>
-        <p>This pages lists my personal projects</p>
-    </div>
-    <div class="body-container">
-        <div class="content-container">
-            <div class="c-title">
-                <span>Prasadam</span>
-            </div>
-            <div class="c-link">
-                <a href="https://prasadam.popsy.site/">prasadam</a>
-            </div>
-            <div class="c-desc">
-                <p>Prasadam is a hub that consists of various educational and professional resources links absolutely
-                    free to learn and immensely helpful to the ones who crave knowledge. All you need is the infinite
-                    curiosity to learn.</p>
-            </div>
+    <div class="body">
+        <div class="sub-heading flex-column">
+            <span>Personal Projects</span>
+            <p>This pages lists my personal projects</p>
         </div>
+        <div class="main-container flex-column" id="main-container">
+        </div>
+    </div>
+    <div class="footer">
+        <span> <i class="fa-brands fa-github"></i><a href="https://github.com/raparthisaikiran">GitHub</a></span>
     </div>
 </body>
 <style>
-    .nav-bar {
-        /* color: blue; */
+    html {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: 100%;
+        width: 100%;
     }
 
-    .heading {
+    .header {
+        color: #fc9c33;
+        padding-bottom: 0px;
+        font-size: 1.5rem;
+    }
+
+    .flex-column {
         display: flex;
         flex-direction: column;
     }
 
-    .body-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .content-container {
+    .flex-row {
         display: flex;
         flex-direction: row;
         align-items: baseline;
     }
-    .content-container>div {
+
+    .sub-container>div {
         margin: 8px;
     }
 
-    .heading>span {
-        font-size: larger;
+    .sub-heading>span {
+        font-size: 2rem;
     }
 
-    .c-title {
+    .w-15 {
         width: 15%;
     }
 
-    .c-link {
-        width: 15%;
-
+    .w-70 {
+        width: 71%;
     }
 
-    .c-desc {
-        width: 70%;
-
+    .c-link>a {
+        color: #fc9c33;
+    }
+    .footer{
+        text-align: center;
+        bottom: 5px;
     }
 </style>
 
