@@ -13,9 +13,19 @@
 
 <body>
     <div class="header">
-        <h1 class="title">Sai Kiran, Raparthi</h1>
+        <div>
+            <h1 class="title">Sai Kiran, Raparthi</h1>
+        </div>
+        <div class="socials">
+            <span><a href="mailto:email@example.com">Send Email</a></span>
+            <span><a href="https://github.com/raparthisaikiran">GitHub</a></span>
+        </div>
     </div>
     <div class="body">
+        <div>
+            <!-- <span class="title">Intro</span>
+            <p>Hello,  </p> -->
+        </div>
         <div class="sub-heading flex-column">
             <span>Personal Projects</span>
             <p>This pages lists my personal projects</p>
@@ -24,7 +34,7 @@
         </div>
     </div>
     <div class="footer">
-        <span> <i class="fa-brands fa-github"></i><a href="https://github.com/raparthisaikiran">GitHub</a></span>
+        <!-- <span> <i class="fa-brands fa-github"></i><a href="https://github.com/raparthisaikiran">GitHub</a></span> -->
     </div>
 </body>
 <style>
@@ -32,12 +42,26 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         height: 100%;
         width: 100%;
+        background-color: #000;
+        color: #fff;
     }
 
     .header {
-        color: #fc9c33;
         padding-bottom: 0px;
         font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .title,h1{
+        color: #fc9c33;
+    }
+    .socials{
+        font-size: small;
+    }
+    .socials > span > a{
+        color: red;
     }
 
     .flex-column {
@@ -70,7 +94,8 @@
     .c-link>a {
         color: #fc9c33;
     }
-    .footer{
+
+    .footer {
         text-align: center;
         bottom: 5px;
     }
