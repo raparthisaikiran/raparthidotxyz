@@ -1,6 +1,7 @@
-import data from '../data/data.json';
-var content = document.getElementById('main-container')
-data.forEach(element => {
+var content = document.getElementById('main-container');
+const response = await fetch("https://raw.githubusercontent.com/raparthisaikiran/raparthidotxyz/master/data/data.json");
+  const jsonData = await response.json();
+  jsonData.forEach(element => {
     content.innerHTML += `
     <div class="sub-content flex-row">
     <div class="c-title w-15">
